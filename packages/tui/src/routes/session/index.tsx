@@ -1176,7 +1176,7 @@ export function Session() {
         }}
       >
         <box flexDirection="row" flexGrow={1} minHeight={0}>
-          <box flexGrow={1} minHeight={0} paddingBottom={1} paddingLeft={2} paddingRight={2} gap={1}>
+          <box flexGrow={1} minHeight={0} paddingBottom={1} paddingLeft={2} paddingRight={2}>
             <Show when={session()}>
               <scrollbox
                 ref={(r) => (scroll = r)}
@@ -1187,8 +1187,8 @@ export function Session() {
                   paddingLeft: 1,
                   visible: showScrollbar(),
                   trackOptions: {
-                    backgroundColor: theme.backgroundElement,
-                    foregroundColor: theme.border,
+                    backgroundColor: theme.background,
+                    foregroundColor: theme.backgroundElement,
                   },
                 }}
                 stickyScroll={true}
